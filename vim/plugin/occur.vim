@@ -64,8 +64,8 @@ function! s:SetupAndGo(func)
     normal! H
 
     " Do Occur
-    call function(a:func)()
-
+    let CallOccur = function(a:func)
+    call CallOccur()
     " Open the results window (and restore cursor position)
     keepjumps cfirst 1
     exec "normal! \<C-o>"
