@@ -69,7 +69,7 @@ function! s:SetupAndGo(func)
     " Open the results window (and restore cursor position)
     keepjumps cfirst 1
     exec "normal! \<C-o>"
-    copen
+    vert copen
 
     " Map the key sequence on the QuickFix
     if !g:occur_no_quickfix_map
